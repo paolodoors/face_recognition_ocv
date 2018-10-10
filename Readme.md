@@ -42,6 +42,8 @@ El detalle en : https://gist.github.com/ageitgey/629d75c1baac34dfa5ca2a1928a7aea
 pip3 install face_recognition
 ```
 
+## Face Recogniton
 
+https://github.com/ageitgey/face_recognition#installing-on-mac-or-linux
 
 
