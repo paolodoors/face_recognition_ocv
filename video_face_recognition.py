@@ -14,22 +14,27 @@ import cv2
 video_capture = cv2.VideoCapture(0)
 
 # Load a sample picture and learn how to recognize it.
-obama_image = face_recognition.load_image_file("sapo1.jpg")
+sapo_image = face_recognition.load_image_file("images/sapo1.jpg")
 
-obama_face_encoding = face_recognition.face_encodings(obama_image)[0]
+sapo_face_encoding = face_recognition.face_encodings(sapo_image)[0]
 
 # Load a second sample picture and learn how to recognize it.
-biden_image = face_recognition.load_image_file("paolo.jpg")
-biden_face_encoding = face_recognition.face_encodings(biden_image)[0]
+pablete_image = face_recognition.load_image_file("images/pablete.jpg")
+pablete_face_encoding = face_recognition.face_encodings(pablete_image)[0]
+
+flor_image = face_recognition.load_image_file("images/flor.jpg")
+flor_face_encoding = face_recognition.face_encodings(flor_image)[0]
 
 # Create arrays of known face encodings and their names
 known_face_encodings = [
-    obama_face_encoding,
-    biden_face_encoding
+    sapo_face_encoding,
+    pablete_face_encoding,
+    flor_face_encoding
 ]
 known_face_names = [
     "sapo",
-    "Paolo"
+    "pablete",
+    "rottweiler"
 ]
 
 # Initialize some variables
