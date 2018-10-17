@@ -190,8 +190,8 @@ def main(_):
   label_map_dict = label_map_util.get_label_map_dict(FLAGS.label_map_path)
   logging.info('Reading from Pet dataset.')
   # image_dir = os.path.join(data_dir, 'images')
-  image_dir = FLAGS.data_dir
-  annotations_dir = os.path.join(data_dir, 'annotations')
+  image_dir = data_dir
+  annotations_dir = os.path.join('', 'annotations')
   examples_path = os.path.join(annotations_dir, 'trainval.txt')
   examples_list = dataset_util.read_examples_list(examples_path)
 
