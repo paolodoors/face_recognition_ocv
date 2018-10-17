@@ -40,7 +40,7 @@ from object_detection.utils import dataset_util, label_map_util
 
 
 flags = tf.app.flags
-flags.DEFINE_string('data_dir', '', 'Root directory to raw pet dataset.')
+flags.DEFINE_string('data_dir', 'images', 'Root directory to raw pet dataset.')
 flags.DEFINE_string('output_dir', 'data', 'Path to directory to output TFRecords.')
 flags.DEFINE_string('label_map_path', 'data/label.pbtxt',
                     'Path to label map proto')
@@ -189,7 +189,8 @@ def main(_):
   data_dir = FLAGS.data_dir
   label_map_dict = label_map_util.get_label_map_dict(FLAGS.label_map_path)
   logging.info('Reading from Pet dataset.')
-  image_dir = os.path.join(data_dir, 'images')
+  # image_dir = os.path.join(data_dir, 'images')
+  image_dir = FLAGS.data_dir
   annotations_dir = os.path.join(data_dir, 'annotations')
   examples_path = os.path.join(annotations_dir, 'trainval.txt')
   examples_list = dataset_util.read_examples_list(examples_path)
