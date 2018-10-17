@@ -42,7 +42,7 @@ Para poner a reentrenar el modelo, primero tenenos que:
 En este caso, elegí el modelo faster_rcnn_resnet101_coco_2018_01_28.
 Modificamos el archivo de configuración seleccionado y lo colocamos en la carpeta model con el nombre model.config
 
-En este archivo debemos modificar los paths que correspondan:
+En este archivo debemos modificar los paths que correspondan y el número de clases:
 
 ```
 model {
@@ -52,7 +52,7 @@ model {
 
 
 ```
-  fine_tune_checkpoint: "path/faster_rcnn_resnet101_coco_2018_01_28/model.ckpt"
+  fine_tune_checkpoint: "<SOME_PATH>/faster_rcnn_resnet101_coco_2018_01_28/model.ckpt"
 ```
 
 ```
