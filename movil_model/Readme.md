@@ -34,7 +34,10 @@ Al correr el script se deberían haber generado los archivos *pet_train.record* 
 
 3. Ahora si, a reentrenar (tarda mucho!)
 
-![Alt Text](https://media.giphy.com/media/rNgT8P8pL3dn2/giphy.gif)
+<!-- ![Alt Text](https://media.giphy.com/media/rNgT8P8pL3dn2/giphy.gif) -->
+
+<img src="https://media.giphy.com/media/rNgT8P8pL3dn2/giphy.gif" width="500" height="300" />
+
 
 Para poner a reentrenar el modelo, primero tenenos que:
 * Seleccionar el modelo. [Link](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md)
